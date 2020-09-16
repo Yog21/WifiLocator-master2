@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/getrpid"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_input"
+        android:hint="Reference Point"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/getrssi1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getrpid"
+        android:layout_marginTop="10dp"
+        android:hint="RSSI 1"
+        android:background="@drawable/custom_input"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/getrssi2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getrssi1"
+        android:layout_marginTop="10dp"
+        android:hint="RSSI 2"
+        android:background="@drawable/custom_input"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/getrssi3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getrssi2"
+        android:layout_marginTop="10dp"
+        android:hint="RSSI 3"
+        android:background="@drawable/custom_input"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/getX"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getrssi3"
+        android:layout_marginTop="10dp"
+        android:hint="X Cordinate"
+        android:background="@drawable/custom_input"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/getY"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getX"
+        android:layout_marginTop="10dp"
+        android:hint="Y Cordinate"
+        android:background="@drawable/custom_input"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_below="@id/getY"
+        android:layout_marginTop="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Add"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"/>
+
+</RelativeLayout>

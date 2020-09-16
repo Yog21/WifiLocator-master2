@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:id="@+id/mapview"
+            android:background="@drawable/map"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/mapview"
+            android:id="@+id/location"
+            android:text="Location"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:background="@drawable/custom_input"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="2dp"
+            />
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/location"
+            android:paddingTop="15dp"
+            android:text="current location"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:background="@drawable/custom_input"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="2dp"/>
+
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_below="@+id/mapview"
+            android:id="@+id/rssi"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/location"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Direction"
+            android:background="@drawable/custom_input"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textView"
+            android:layout_height="135dp"
+            android:layout_below="@id/direction"
+            android:layout_centerVertical="true"
+            android:text="Live rssi readings"
+            android:textAlignment="center"
+            android:background="@drawable/custom_input"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_below="@+id/rssi"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:id="@+id/direction"
+            android:layout_toRightOf="@+id/loc"
+            android:text="current direction"
+            android:background="@drawable/custom_input"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Locate"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_locate"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="2dp"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="display"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_table"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="2dp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
